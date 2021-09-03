@@ -35,10 +35,11 @@
 -->
 
 <%
-	Cookie mycookie = new Cookie("cname", "1004");
-	
-
+	Cookie mycookie = new Cookie("cname","1004");
+   //서버가 필요에 따라서 쿠키객체 생성
+   //내사이트 접속한 브라우져 (Client) 전달 >> response
+	response.addCookie(mycookie); //쓰기
 %>
-<a href></a>
+<a href="Ex15_Cookie_Read.jsp">Cookie Read</a>
 </body>
 </html>
